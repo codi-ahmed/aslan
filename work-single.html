@@ -1,81 +1,242 @@
 <!doctype html>
 <html lang="en-US">
+
 <head>
 
-  <title>Aster - Portfolio Agency Template</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="HandheldFriendly" content="true">
-  <meta name="author" content="beshleyua" />
+	<title>Aslan</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="author" content="beshleyua" />
 
-  <!-- Fonts -->
-  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CPlayfair+Display%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CMr+De+Haviland&#038;display=swap" type="text/css" media="all" />
+	<!-- Fonts -->
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CPlayfair+Display%3A100%2C100i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CMr+De+Haviland&#038;display=swap"
+		type="text/css" media="all" />
 
-  <!-- CSS STYLES -->
-  <link rel="stylesheet" href="assets/css/vendors/bootstrap.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/vendors/splitting.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/vendors/swiper.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/vendors/animate.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/main.css" type="text/css" media="all" />
+	<!-- CSS STYLES -->
+	<link rel="stylesheet" href="assets/css/vendors/bootstrap.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/vendors/splitting.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/vendors/swiper.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/vendors/animate.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css" media="all" />
 
-  <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-  <!-- Favicon -->
+	<!-- Favicon -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<style>
+		.section {
+			width: 100%;
+			margin-top: 15rem;
+			position: relative;
+			height: 100%;
+		}
 
+		.max_width_container {
+			max-width: 90rem;
+			padding-left: 6rem;
+			padding-right: 6rem;
+		}
+
+		.headline-wrapper {
+			z-index: 2;
+			text-align: center;
+			flex-flow: column;
+			justify-content: flex-start;
+			align-items: center;
+			max-width: 55rem;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex
+		}
+
+		.vertical-gap-8 {
+			grid-column-gap: .5rem;
+			grid-row-gap: .5rem;
+			flex-flow: column;
+			justify-content: flex-start;
+			align-items: center;
+			display: flex
+		}
+
+		.eyebrow-heading {
+			background-image: linear-gradient(90deg, var(--brand-primary), var(--brand-secondary));
+			text-transform: uppercase;
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			background-clip: text;
+			font-size: clamp(.875rem, 3vw, 1.25rem)
+		}
+
+		.benefit-cards_wrapper {
+			z-index: 2;
+			grid-column-gap: 1.5rem;
+			grid-row-gap: 1.5rem;
+			grid-template-rows: auto;
+			grid-template-columns: 1fr 1fr;
+			grid-auto-columns: 1fr;
+			margin-top: 4rem;
+			display: grid
+		}
+
+		.benefit-card {
+			grid-column-gap: 1.5rem;
+			grid-row-gap: 1.5rem;
+			text-align: center;
+			border-radius: 1.5rem;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			/* padding: 4rem; */
+			display: flex;
+			position: relative
+		}
+
+		.benefit-card_inner {
+			grid-column-gap: 1rem;
+			grid-row-gap: 1rem;
+			flex-flow: column;
+			justify-content: flex-start;
+			align-items: center;
+			max-width: 25rem;
+			display: flex
+		}
+
+		.heading-style-h3-small {
+			font-size: clamp(1.rem, 5vw, 1.75rem);
+			font-weight: 500;
+		}
+		[radial-border]::after {
+      content: "";
+      pointer-events: none;
+      user-select: none;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask-composite: xor;
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      position: absolute;
+      inset: 0;
+      padding: 2px;
+      border-radius: inherit;
+      background: radial-gradient(ellipse 80% 80% at 50% 20%,
+          rgba(195, 193, 195, 0.9),
+          #D4AD36,
+          rgba(165, 160, 69, 0));
+    }
+
+    [radial-border="right"]::after {
+      background: radial-gradient(ellipse 80% 80% at 95% 20%,
+          rgba(195, 193, 195, 0.9),
+          #D4AD36,
+          rgba(165, 160, 69, 0));
+    }
+
+    [radial-border="left"]::after {
+      background: radial-gradient(ellipse 80% 80% at 5% 20%,
+          rgba(195, 193, 195, 0.9),
+          #D4AD36,
+          rgba(165, 160, 69, 0));
+    }
+		[glow-border="card"]::before {
+			content: "";
+			pointer-events: none;
+			user-select: none;
+			-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+			mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+			mask-composite: xor;
+			-webkit-mask-composite: xor;
+			mask-composite: exclude;
+			position: absolute;
+			inset: 0;
+			padding: 2px;
+			border-radius: inherit;
+			opacity: 0;
+			will-change: background, opacity;
+			transition-duration: 400ms;
+			transition-timing-function: ease;
+			transition-delay: 0s;
+			transition-property: opacity;
+			background: radial-gradient(circle 10rem at var(--cursor-x) var(--cursor-y),
+					 rgba(195, 193, 195, 0.9),
+          #D4AD36,
+          rgba(165, 160, 69, 0));
+			background-size: auto;
+			background-origin: padding-box;
+			z-index: 0;
+		}
+
+		[glow-border="wrapper"]:hover [glow-border="card"]::before {
+			opacity: 1;
+		}
+
+		@media screen and (max-width:991px) {
+			.headline-wrapper {
+				width: 100%;
+				max-width: none
+			}
+
+			.benefit-cards_wrapper {
+				grid-template-columns: 1fr;
+				margin-top: 3rem
+			}
+		}
+	</style>
 </head>
 
 <body class="home page">
-<div class="container-page">
+	<div class="container-page">
 
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="centrize full-width">
-      <div class="vertical-center">
-        <div class="spinner-logo">
-          <img src="assets/images/logo.png" alt="" />
-          <div class="spinner-dot"></div>
-          <div class="spinner spinner-line"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-	<!-- Header -->
-	<header class="header">
-    <div class="header__builder">
-
-      <!-- logo -->
-      <div class="logo-image">
-			   <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+		<!-- Preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner-logo">
+						<img src="assets/images/logo.png" alt="" />
+						<div class="spinner-dot"></div>
+						<div class="spinner spinner-line"></div>
+					</div>
+				</div>
 			</div>
+		</div>
 
-			<!-- menu btn -->
-      <a href="#" class="menu-btn full"><span></span></a>
+		<!-- Header -->
+		<header class="header">
+			<div class="header__builder">
 
-      <!-- Menu Full Overlay -->
-      <div class="menu-full-overlay">
+				<!-- logo -->
+				<div class="logo-image">
+					<a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+				</div>
 
-        <div class="menu-full-container">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+				<!-- menu btn -->
+				<a href="#" class="menu-btn full"><span></span></a>
 
-                <!-- menu full -->
-                <div class="menu-full">
-                  <ul class="menu-full">
-					 <!-- menu-item-has-children has-children -->
-                    <li class="menu-item">
-                      <a class="splitting-text-anim-2" data-splitting="chars" href="#">Home</a>
-                      <!-- <ul class="sub-menu">
+				<!-- Menu Full Overlay -->
+				<div class="menu-full-overlay">
+
+					<div class="menu-full-container">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-1">
+
+									<!-- menu full -->
+									<div class="menu-full">
+										<ul class="menu-full">
+											<!-- menu-item-has-children has-children -->
+											<li class="menu-item">
+												<a class="splitting-text-anim-2" data-splitting="chars"
+													href="index.html">Home</a>
+												<!-- <ul class="sub-menu">
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="index.html">Parallax Slider</a></li>
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="home-grid-slider.html">Grid Slider</a></li>
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="home-half-slider.html">Half Slider</a></li>
@@ -83,82 +244,93 @@
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="home-motion-slider.html">Distortion Slider</a></li>
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="home-portfolio.html">Portfolio Grid</a></li>
                       </ul> -->
-                    </li>
-					<!-- menu-item-has-children has-children -->
-                    <li class="menu-item ">
-                      <a class="splitting-text-anim-2" data-splitting="chars" href="#">About</a>
-                      <!-- <ul class="sub-menu">
+											</li>
+											<!-- menu-item-has-children has-children -->
+											<li class="menu-item ">
+												<a class="splitting-text-anim-2" data-splitting="chars"
+													href="about.html">About</a>
+												<!-- <ul class="sub-menu">
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="about.html">About One</a></li>
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="about-two.html">About Two</a></li>
                       </ul> -->
-                    </li>
-					<!-- menu-item-has-children has-children -->
-                    <li class="menu-item ">
-                      <a class="splitting-text-anim-2" data-splitting="chars" href="#">Works</a>
-                      <!-- <ul class="sub-menu">
+											</li>
+											<!-- menu-item-has-children has-children -->
+											<li class="menu-item ">
+												<a class="splitting-text-anim-2" data-splitting="chars"
+													href="problem.html">Problem</a>
+												<!-- <ul class="sub-menu">
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="works-2-column.html">Works (2 Columns)</a></li>
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="works-3-column.html">Works (3 Columns)</a></li>
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="works-creative.html">Works (Creative)</a></li>
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="gallery-2-column.html">Gallery (2 Columns)</a></li>
                         <li class="menu-item"><a class="splitting-text-anim-1" data-splitting="chars" href="gallery-3-column.html">Gallery (3 Columns)</a></li>
                       </ul> -->
-                    </li>
-                    <li class="menu-item">
-                      <a class="splitting-text-anim-2" data-splitting="chars" href="contacts.html">Contact</a>
-                    </li>
-                    <li class="menu-item">
-                      <a class="splitting-text-anim-2" data-splitting="chars" href="blog.html">Blog</a>
-                    </li>
-                  </ul>
-                </div>
+											</li>
+											<li class="menu-item">
+												<a class="splitting-text-anim-2" data-splitting="chars"
+													href="contacts.html">Contact</a>
+											</li>
+											<li class="menu-item">
+												<a class="splitting-text-anim-2" data-splitting="chars"
+													href="blog.html">Blog</a>
+											</li>
+										</ul>
+									</div>
 
-              </div>
-            </div>
-          </div>
-        </div>
-
-				<!-- social -->
-        <div class="menu-social-links">
-          <a href="https://instagram.com/" target="blank" class="scrolla-element-anim-1" title="Instagram">Instagram</a>
-          <a href="https://facebook.com/" target="blank" class="scrolla-element-anim-1" title="Facebook">Facebook</a>
-          <a href="https://twitter.com/" target="blank" class="scrolla-element-anim-1" title="Twitter">Twitter</a>
-          <a href="https://linkedin.com/" target="blank" class="scrolla-element-anim-1" title="Linkedin">Linkedin</a>
-        </div>
-
-      </div>
-
-		</div>
-	</header>
-
-	<!-- Wrapper -->
-	<div class="wrapper">
-
-		<!-- Section Started Heading -->
-		<div class="section section-inner started-heading">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-						<!-- titles -->
-						<div class="h-titles">
-							<div class="h-subtitle red splitting-text-anim-1 scroll-animate" data-splitting="chars" data-animate="active">Photography</div>
-							<div class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars" data-animate="active">We see the signal before the siren</div>
+								</div>
+							</div>
 						</div>
+					</div>
 
+					<!-- social -->
+					<div class="menu-social-links">
+						<a href="https://instagram.com/" target="blank" class="scrolla-element-anim-1"
+							title="Instagram">Instagram</a>
+						<a href="https://facebook.com/" target="blank" class="scrolla-element-anim-1"
+							title="Facebook">Facebook</a>
+						<a href="https://twitter.com/" target="blank" class="scrolla-element-anim-1"
+							title="Twitter">Twitter</a>
+						<a href="https://linkedin.com/" target="blank" class="scrolla-element-anim-1"
+							title="Linkedin">Linkedin</a>
+					</div>
+
+				</div>
+
+			</div>
+		</header>
+
+		<!-- Wrapper -->
+		<div class="wrapper">
+
+			<!-- Section Started Heading -->
+			<div class="section section-inner started-heading">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+							<!-- titles -->
+							<div class="h-titles">
+								<div class="h-subtitle red splitting-text-anim-1 scroll-animate" data-splitting="chars"
+									data-animate="active">Photography</div>
+								<div class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars"
+									data-animate="active">We see the signal before the siren</div>
+							</div>
+
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- Section Image Large -->
-		<div class="section section-inner m-image-large scrolla-element-anim-1 scroll-animate" data-animate="active">
-			<div class="image">
-				<div class="img js-parallax" style="background-image: url(assets/images/started_new.jpg);"></div>
+			<!-- Section Image Large -->
+			<div class="section section-inner m-image-large scrolla-element-anim-1 scroll-animate"
+				data-animate="active">
+				<div class="image">
+					<div class="img js-parallax" style="background-image: url(assets/images/started_new.jpg);"></div>
+				</div>
 			</div>
-		</div>
 
-		<!-- Section Details -->
-		<div class="section section-inner m-details">
+			<!-- Section Details -->
+			<!-- <div class="section section-inner m-details">
 			<div class="container">
 				<div class="details-box">
 					<div class="row">
@@ -185,28 +357,77 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<!-- Section Description -->
-		<div class="section section-inner m-description">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
-						<div class="m-titles">
-							<div class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">Introduction</div>
+			<!-- Section Description -->
+			<div class="section section-inner m-description">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
+							<div class="m-titles">
+								<div class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">
+									Introduction</div>
+							</div>
 						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<div class="description-text scrolla-element-anim-1 scroll-animate splitting-text-anim-1" data-animate="active">
-							<p>The rot of mass violence has embedded itself into our lives. And year after year, that infestation warps more minds, claims more lives, and leaves more destruction in its wake. We’ve been made to live under a perpetual sense of fear and foreboding because the conventional wisdom is that we can neither see nor predict these acts.</p>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="description-text scrolla-element-anim-1 scroll-animate splitting-text-anim-1"
+								data-animate="active">
+								<p>The rot of mass violence has embedded itself into our lives. And year after year,
+									that infestation warps more minds, claims more lives, and leaves more destruction in
+									its wake. We’ve been made to live under a perpetual sense of fear and foreboding
+									because the conventional wisdom is that we can neither see nor predict these acts.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- Section Gallery -->
-		<div class="section section-inner m-gallery">
+
+			<!-- quantum section import  -->
+			<div class="section">
+				<div class="container ">
+					<div class="headline-wrapper">
+						<div class="vertical-gap-8">
+							<p data-animation="text-reveal" class="eyebrow-heading">Benefits</p>
+							<h2 data-animation="text-reveal">What makes us unique?</h2>
+						</div>
+					</div>
+					<div glow-border="wrapper" class="benefit-cards_wrapper">
+						<div radial-border="right" glow-border="card" class="benefit-card is-left">
+							<div class="benefit-card_inner">
+								<h3 data-animation="text-reveal" class="heading-style-h3-small">Alias discovery</h3>
+								<p data-animation="text-reveal"> Unearth the alias.</p>
+							</div>
+						</div>
+						<div radial-border="left" glow-border="card" class="benefit-card is-right">
+							<div class="benefit-card_inner">
+								<h3 data-animation="text-reveal" class="heading-style-h3-small">Digital footprint</h3>
+								<p data-animation="text-reveal">Map the footprint.</p>
+							</div>
+						</div>
+						<div radial-border="right" glow-border="card" class="benefit-card is-left">
+							<div class="benefit-card_inner">
+								<h3 data-animation="text-reveal" class="heading-style-h3-small">Persistent monitoring</h3>
+								<p data-animation="text-reveal">Monitor the drift.</p>
+							</div>
+						</div>
+						<div radial-border="left" glow-border="card" class="benefit-card is-right">
+							<div class="benefit-card_inner">
+								<h3 data-animation="text-reveal" class="heading-style-h3-small">Alerts</h3>
+								<p data-animation="text-reveal">Surface the signal.</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<!-- Section Gallery -->
+			<!-- <div class="section section-inner m-gallery">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -233,179 +454,73 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<!-- Section Description -->
-		<div class="section section-inner m-description">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
-						<div class="m-titles">
-							<div class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">Result</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<div class="description-text scrolla-element-anim-1 scroll-animate" data-animate="active">
-							<p>It is not enough that we build products that function, that are understandable and usable, we also need to build products that bring joy and excitement, pleasure and fun, and, yes, beauty to people’s lives. Creativity is to discover a question that has never been asked. If one brings up an idiosyncratic question, the answer he gives will necessarily be unique as well.</p><p>Creativity is to discover a question that has never been asked. If one brings up an idiosyncratic question, the answer he gives will necessarily be unique as well.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Section Gallery Carousel -->
-		<!-- <div class="section section-inner m-gallery-carousel scrolla-element-anim-1 scroll-animate" data-animate="active">
-			<div class="container">
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<img src="assets/images/started-n2_4.jpg" alt="Image #1" />
-						</div>
-						<div class="swiper-slide">
-							<img src="assets/images/started-n20.jpg" alt="Image #2" />
-						</div>
-						<div class="swiper-slide">
-							<img src="assets/images/started-n14.jpg" alt="Image #3" />
-						</div>
-					</div>
-				</div>
-			</div>
 		</div> -->
 
-		<!-- section works Carousel -->
+			<!-- Section Description -->
+			<div class="section section-inner m-description">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
+							<div class="m-titles">
+								<div class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">Result
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="description-text scrolla-element-anim-1 scroll-animate" data-animate="active">
+								<p>It is not enough that we build products that function, that are understandable and
+									usable, we also need to build products that bring joy and excitement, pleasure and
+									fun, and, yes, beauty to people’s lives. Creativity is to discover a question that
+									has never been asked. If one brings up an idiosyncratic question, the answer he
+									gives will necessarily be unique as well.</p>
+								<p>Creativity is to discover a question that has never been asked. If one brings up an
+									idiosyncratic question, the answer he gives will necessarily be unique as well.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-		<div class="section m-works-carousel fully">
-		  <div class="swiper-container">
-		    <div class="swiper-wrapper">
+			<!-- Section Gallery Carousel -->
+			<div class="section section-inner m-gallery-carousel scrolla-element-anim-1 scroll-animate"
+				data-animate="active">
+				<div class="container">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<p class="about-heading">Law enforcement</p>
+								<p class="about-subheading">Go beneath the surface of known subjects to unlock the
+									patterns and paper trails that point towards forthcoming harm.</p>
+								<img src="assets/images/Law enforcement .jpg" alt="Image #1" />
+							</div>
 
-		      <!-- slide -->
-		      <div class="swiper-slide">
+							<div class="swiper-slide">
+								<p class="about-heading">School safety</p>
+								<p class="about-subheading">Detect the subtle shifts in students already on your radar.
+									Uncover the hidden trails that signal mounting risk and act before harm defines
+									their story.</p>
+								<img src="assets/images/school safety.jpg" alt="Image #2" />
+							</div>
 
-		        <!-- works slide -->
-		        <div class="works-slide">
-		          <a href="work-single.html">
-		            <span class="image">
-		              <span class="img">
-		                <span class="slide" style="background-image: url(assets/images/Law\ enforcement\ .jpg);"></span>
-		              </span>
-		            </span>
-		            <span class="desc">
-		              <span class="subname splitting-text-anim-1" data-splitting="chars">Go beneath the surface of known subjects to unlock the patterns and paper trails that point towards forthcoming harm.</span>
-		              <span class="name splitting-text-anim-1" data-splitting="chars">Law Enforcement</span>
-		            </span>
-		          </a>
-		        </div>
+							<div class="swiper-slide">
+								<p class="about-heading">Intelligence organizations</p>
+								<p class="about-subheading">Move beyond surface chatter. Track the subtle shifts and
+									concealed patterns in persons of concern that traditional monitoring overlooks.</p>
+								<img src="assets/images/intelegence organization.jpg" alt="Image #3" />
+							</div>
+						</div>
 
-		      </div>
 
-		      <!-- slide -->
-		      <div class="swiper-slide">
+					</div>
+				</div>
+			</div>
 
-		        <!-- works slide -->
-		        <div class="works-slide">
-		          <a href="work-single.html">
-		            <span class="image">
-		              <span class="img">
-		                <span class="slide" style="background-image: url(assets/images/school\ safety.jpg);"></span>
-		              </span>
-		            </span>
-		            <span class="desc">
-		              <span class="subname splitting-text-anim-1" data-splitting="chars">Detect the subtle shifts in students already on your radar. Uncover the hidden trails that signal mounting risk and act before harm defines their story.</span>
-		              <span class="name splitting-text-anim-1" data-splitting="chars">School safety</span>
-		            </span>
-		          </a>
-		        </div>
+			<!-- section works Carousel -->
 
-		      </div>
 
-		      <!-- slide -->
-		      <div class="swiper-slide">
 
-		        <!-- works slide -->
-		        <div class="works-slide">
-		          <a href="work-single.html">
-		            <span class="image">
-		              <span class="img">
-		                <span class="slide" style="background-image: url(assets/images/intelegence\ organization.jpg);"></span>
-		              </span>
-		            </span>
-		            <span class="desc">
-		              <span class="subname splitting-text-anim-1" data-splitting="chars">Move beyond surface chatter. Track the subtle shifts and concealed patterns in persons of concern that traditional monitoring overlooks.</span>
-		              <span class="name splitting-text-anim-1" data-splitting="chars">Intelligence organizations</span>
-		            </span>
-		          </a>
-		        </div>
-
-		      </div>
-
-		      <!-- slide -->
-		      <div class="swiper-slide">
-
-		        <!-- works slide -->
-		        <div class="works-slide">
-		          <a href="work-single.html">
-		            <span class="image">
-		              <span class="img">
-		                <span class="slide" style="background-image: url(assets/images/Law\ enforcement\ .jpg);"></span>
-		              </span>
-		            </span>
-		            <span class="desc">
-		              <span class="subname splitting-text-anim-1" data-splitting="chars">Go beneath the surface of known subjects to unlock the patterns and paper trails that point towards forthcoming harm.</span>
-		              <span class="name splitting-text-anim-1" data-splitting="chars">Law Enforcement</span>
-		            </span>
-		          </a>
-		        </div>
-
-		      </div>
-
-		      <!-- slide -->
-		      <div class="swiper-slide">
-
-		        <!-- works slide -->
-		        <div class="works-slide">
-		          <a href="work-single.html">
-		            <span class="image">
-		              <span class="img">
-		                <span class="slide" style="background-image: url(assets/images/school\ safety.jpg);"></span>
-		              </span>
-		            </span>
-		            <span class="desc">
-		              <span class="subname splitting-text-anim-1" data-splitting="chars">Detect the subtle shifts in students already on your radar. Uncover the hidden trails that signal mounting risk and act before harm defines their story.</span>
-		              <span class="name splitting-text-anim-1" data-splitting="chars">Astronaut</span>
-		            </span>
-		          </a>
-		        </div>
-
-		      </div>
-
-		      <!-- slide -->
-		      <div class="swiper-slide">
-
-		        <!-- works slide -->
-		        <div class="works-slide">
-		          <a href="work-single.html">
-		            <span class="image">
-		              <span class="img">
-		                <span class="slide" style="background-image: url(assets/images/intelegence\ organization.jpg);"></span>
-		              </span>
-		            </span>
-		            <span class="desc">
-		              <span class="subname splitting-text-anim-1" data-splitting="chars">Move beyond surface chatter. Track the subtle shifts and concealed patterns in persons of concern that traditional monitoring overlooks.</span>
-		              <span class="name splitting-text-anim-1" data-splitting="chars">Intelligence organizations </span>
-		            </span>
-		          </a>
-		        </div>
-
-		      </div>
-
-		    </div>
-
-		    <div class="swiper-pagination"></div>
-		  </div>
-		</div>
-
-		<!-- Section Navigation -->
-		<div class="section section-inner m-page-navigation">
+			<!-- Section Navigation -->
+			<!-- <div class="section section-inner m-page-navigation">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-2">
@@ -418,90 +533,362 @@
 					</div>
 				</div>
 			</div>
+		</div> -->
+
+			<div class="section section-inner m-partners">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+							<!-- partners -->
+							<div class="partners-box">
+								<div class="partners-items row">
+									<div class="partners-col col-xs-12 col-sm-6 col-md-3 col-lg-3 scrolla-element-anim-1 scroll-animate"
+										data-animate="active">
+										<div class="partners-item">
+											<div class="image">
+												<a target="_blank" href="https://www.envato.com/"><img
+														src="assets/images/brand_logo_03_1.png" alt="#1" /></a>
+											</div>
+										</div>
+									</div>
+									<div class="partners-col col-xs-12 col-sm-6 col-md-3 col-lg-3 scrolla-element-anim-1 scroll-animate"
+										data-animate="active">
+										<div class="partners-item">
+											<div class="image">
+												<a target="_blank" href="https://www.envato.com/"><img
+														src="assets/images/brand_logo_08_1.png" alt="#2" /></a>
+											</div>
+										</div>
+									</div>
+									<div class="partners-col col-xs-12 col-sm-6 col-md-3 col-lg-3 scrolla-element-anim-1 scroll-animate"
+										data-animate="active">
+										<div class="partners-item">
+											<div class="image">
+												<a target="_blank" href="https://www.envato.com/"><img
+														src="assets/images/brand_logo_06_1.png" alt="#3" /></a>
+											</div>
+										</div>
+									</div>
+									<div class="partners-col col-xs-12 col-sm-6 col-md-3 col-lg-3 scrolla-element-anim-1 scroll-animate"
+										data-animate="active">
+										<div class="partners-item">
+											<div class="image">
+												<a target="_blank" href="https://www.envato.com/"><img
+														src="assets/images/brand_logo_05_1.png" alt="#4" /></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer__builder">
+				<div class="container align-center">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+
+							<!-- titles -->
+							<div class="h-titles">
+								<div class="h-subtitle scrolla-element-anim-1 scroll-animate" data-animate="active">
+									Address:</div>
+								<div class="h-text scrolla-element-anim-1 scroll-animate" data-animate="active">
+									Holloween, <br>NY 11385, USA</div>
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+
+							<!-- titles -->
+							<div class="h-titles">
+								<div class="h-subtitle scrolla-element-anim-1 scroll-animate" data-animate="active">
+									Follow Us:</div>
+							</div>
+
+							<!-- social -->
+							<div class="social-links footer-social-links">
+								<a target="_blank" href="https://instagram.com/"
+									class="scrolla-element-anim-1 scroll-animate" data-animate="active">
+									<i aria-hidden="true" class="fab fa-instagram"></i>
+								</a>
+								<a target="_blank" href="https://facebook.com/"
+									class="scrolla-element-anim-1 scroll-animate" data-animate="active">
+									<i aria-hidden="true" class="fab fa-facebook-f"></i>
+								</a>
+								<a target="_blank" href="https://twitter.com/"
+									class="scrolla-element-anim-1 scroll-animate" data-animate="active">
+									<i aria-hidden="true" class="fab fa-twitter"></i>
+								</a>
+								<a target="_blank" href="https://linkedin.com/"
+									class="scrolla-element-anim-1 scroll-animate" data-animate="active">
+									<i aria-hidden="true" class="fab fa-linkedin-in"></i>
+								</a>
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+
+							<!-- titles -->
+							<div class="h-titles">
+								<div class="h-subtitle scrolla-element-anim-1 scroll-animate" data-animate="active">Get
+									in touch:</div>
+								<div class="h-text scrolla-element-anim-1 scroll-animate" data-animate="active">
+									<p>Aslan@d.com<br />+012 (234) 567 78</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="copyright-text scrolla-element-anim-1 scroll-animate" data-animate="active">
+								Copyright © 2025 Aslan</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- cursor -->
+		<div class="cursor"></div>
+
 	</div>
+	 <script src="https://cdn.prod.website-files.com/gsap/3.13.0/gsap.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/ScrollTrigger.min.js" type="text/javascript"></script>
+	<script>
+		 document.addEventListener("DOMContentLoaded", () =>{
+			gsap.registerPlugin(ScrollTrigger);
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__builder">
-      <div class="container align-center">
-				<div class="row">
-				  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+      // ========== Cursor Glow Border ========== //
+      function cardGlowBorder() {
+        document.querySelectorAll('[glow-border="wrapper"]').forEach(wrapper => {
+          wrapper.addEventListener("mousemove", function (event) {
+            this.querySelectorAll('[glow-border="card"]').forEach(card => {
+              const rect = card.getBoundingClientRect(),
+                x = event.clientX - rect.left,
+                y = event.clientY - rect.top;
+              card.style.setProperty("--cursor-x", `${x}px`);
+              card.style.setProperty("--cursor-y", `${y}px`);
+            });
+          });
+        });
+      }
 
-            <!-- titles -->
-            <div class="h-titles">
-              <div class="h-subtitle scrolla-element-anim-1 scroll-animate" data-animate="active">Address:</div>
-              <div class="h-text scrolla-element-anim-1 scroll-animate" data-animate="active">Holloween, <br>NY 11385, USA</div>
-            </div>
+      if (document.querySelectorAll('[glow-border="wrapper"]').length) {
+        cardGlowBorder();
+      }
 
-          </div>
-				  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+	  // ========== Text Reveal on Scroll ========== //
+      document.querySelectorAll('[data-animation="text-reveal"]').forEach(el => {
+        gsap.fromTo(el,
+          { opacity: 0 },
+          {
+            opacity: 1,
+            ease: "none",
+            scrollTrigger: {
+              trigger: el,
+              start: "top 80%",
+              end: "top 40%",
+              scrub: true,
+            }
+          }
+        );
+      });
 
-            <!-- titles -->
-            <div class="h-titles">
-              <div class="h-subtitle scrolla-element-anim-1 scroll-animate" data-animate="active">Follow Us:</div>
-            </div>
+	  // ========== Benefit Cards Scroll In ========== //
+      if (window.innerWidth >= 991) {
+        document.querySelectorAll('.benefit-card').forEach(card => {
+          const isLeft = card.classList.contains('is-left');
+          const isRight = card.classList.contains('is-right');
 
-            <!-- social -->
-            <div class="social-links footer-social-links">
-              <a target="_blank" href="https://instagram.com/" class="scrolla-element-anim-1 scroll-animate" data-animate="active">
-                <i aria-hidden="true" class="fab fa-instagram"></i>
-              </a>
-              <a target="_blank" href="https://facebook.com/" class="scrolla-element-anim-1 scroll-animate" data-animate="active">
-                <i aria-hidden="true" class="fab fa-facebook-f"></i>
-              </a>
-              <a target="_blank" href="https://twitter.com/" class="scrolla-element-anim-1 scroll-animate" data-animate="active">
-                <i aria-hidden="true" class="fab fa-twitter"></i>
-              </a>
-              <a target="_blank" href="https://linkedin.com/" class="scrolla-element-anim-1 scroll-animate" data-animate="active">
-                <i aria-hidden="true" class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
+          const from = {
+            x: isLeft ? '-2rem' : isRight ? '2rem' : '0rem',
+            y: '2rem',
+            opacity: 0
+          };
 
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+          gsap.fromTo(card, from, {
+            x: '0rem',
+            y: '0rem',
+            opacity: 1,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 80%',
+              end: 'top 20%',
+              scrub: true
+            }
+          });
+        });
+      }
+		 });
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			gsap.registerPlugin(ScrollTrigger);
 
-            <!-- titles -->
-            <div class="h-titles">
-              <div class="h-subtitle scrolla-element-anim-1 scroll-animate" data-animate="active">Get in touch:</div>
-              <div class="h-text scrolla-element-anim-1 scroll-animate" data-animate="active">
-                <p>Aslan@d.com<br />+012 (234) 567 78</p>
-              </div>
-            </div>
+			// ========== Cursor Glow Border ========== //
+			function cardGlowBorder() {
+				document.querySelectorAll('[glow-border="wrapper"]').forEach(wrapper => {
+					wrapper.addEventListener("mousemove", function (event) {
+						this.querySelectorAll('[glow-border="card"]').forEach(card => {
+							const rect = card.getBoundingClientRect(),
+								x = event.clientX - rect.left,
+								y = event.clientY - rect.top;
+							card.style.setProperty("--cursor-x", `${x}px`);
+							card.style.setProperty("--cursor-y", `${y}px`);
+						});
+					});
+				});
+			}
 
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="copyright-text scrolla-element-anim-1 scroll-animate" data-animate="active">Copyright © 2025 Aslan</div>
-          </div>
-        </div>
-      </div>
-    </div>
-	</footer>
+			if (document.querySelectorAll('[glow-border="wrapper"]').length) {
+				cardGlowBorder();
+			}
 
-	<!-- cursor -->
-	<div class="cursor"></div>
 
-</div>
+			// ========== Text Reveal on Scroll ========== //
+			document.querySelectorAll('[data-animation="text-reveal"]').forEach(el => {
+				gsap.fromTo(el,
+					{ opacity: 0 },
+					{
+						opacity: 1,
+						ease: "none",
+						scrollTrigger: {
+							trigger: el,
+							start: "top 80%",
+							end: "top 40%",
+							scrub: true,
+						}
+					}
+				);
+			});
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/swiper.js"></script>
-<script src="assets/js/splitting.min.js"></script>
-<script src="assets/js/TweenMax.min.js"></script>
-<script src="assets/js/pixi.min.js"></script>
-<script src="assets/js/jarallax.min.js"></script>
-<script src="assets/js/magnific-popup.js"></script>
-<script src="assets/js/imagesloaded.pkgd.js"></script>
-<script src="assets/js/isotope.pkgd.js"></script>
-<script src="assets/js/jquery.scrolla.js"></script>
-<script src="assets/js/skrollr.js"></script>
-<script src="assets/js/main-slider.js"></script>
-<script src="assets/js/full-slider.js"></script>
-<script src="assets/js/half-slider.js"></script>
-<script src="assets/js/ex-slider.js"></script>
-<script src="assets/js/hero-started.js"></script>
-<script src="assets/js/common.js"></script>
+			// ========== Benefit Cards Scroll In ========== //
+			if (window.innerWidth >= 991) {
+				document.querySelectorAll('.benefit-card').forEach(card => {
+					const isLeft = card.classList.contains('is-left');
+					const isRight = card.classList.contains('is-right');
+
+					const from = {
+						x: isLeft ? '-2rem' : isRight ? '2rem' : '0rem',
+						y: '2rem',
+						opacity: 0
+					};
+
+					gsap.fromTo(card, from, {
+						x: '0rem',
+						y: '0rem',
+						opacity: 1,
+						ease: 'power2.out',
+						scrollTrigger: {
+							trigger: card,
+							start: 'top 80%',
+							end: 'top 20%',
+							scrub: true
+						}
+					});
+				});
+			}
+			function cardGlowBorder() {
+				document.querySelectorAll('[glow-border="wrapper"]').forEach(wrapper => {
+					wrapper.addEventListener("mousemove", function (event) {
+						this.querySelectorAll('[glow-border="card"]').forEach(card => {
+							const rect = card.getBoundingClientRect(),
+								x = event.clientX - rect.left,
+								y = event.clientY - rect.top;
+							card.style.setProperty("--cursor-x", `${x}px`);
+							card.style.setProperty("--cursor-y", `${y}px`);
+						});
+					});
+				});
+			}
+
+			if (document.querySelectorAll('[glow-border="wrapper"]').length) {
+				cardGlowBorder();
+			}
+			// ========== Text Reveal on Scroll ========== //
+			document.querySelectorAll('[data-animation="text-reveal"]').forEach(el => {
+				gsap.fromTo(el,
+					{ opacity: 0 },
+					{
+						opacity: 1,
+						ease: "none",
+						scrollTrigger: {
+							trigger: el,
+							start: "top 80%",
+							end: "top 40%",
+							scrub: true,
+						}
+					}
+				);
+			});
+
+			   // ========== Benefit Cards Scroll In ========== //
+      if (window.innerWidth >= 991) {
+        document.querySelectorAll('.benefit-card').forEach(card => {
+          const isLeft = card.classList.contains('is-left');
+          const isRight = card.classList.contains('is-right');
+
+          const from = {
+            x: isLeft ? '-2rem' : isRight ? '2rem' : '0rem',
+            y: '2rem',
+            opacity: 0
+          };
+
+          gsap.fromTo(card, from, {
+            x: '0rem',
+            y: '0rem',
+            opacity: 1,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 80%',
+              end: 'top 20%',
+              scrub: true
+            }
+          });
+        });
+      }
+
+		});
+	</script>
+	<script>
+		document.querySelectorAll('.swiper-slide').forEach(slide => {
+			slide.addEventListener('click', () => {
+				// remove active class from all slides
+				document.querySelectorAll('.swiper-slide').forEach(s => s.classList.remove('active'));
+				// add active to clicked one
+				slide.classList.add('active');
+			});
+		});
+
+
+	</script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/swiper.js"></script>
+	<script src="assets/js/splitting.min.js"></script>
+	<script src="assets/js/TweenMax.min.js"></script>
+	<script src="assets/js/pixi.min.js"></script>
+	<script src="assets/js/jarallax.min.js"></script>
+	<script src="assets/js/magnific-popup.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/isotope.pkgd.js"></script>
+	<script src="assets/js/jquery.scrolla.js"></script>
+	<script src="assets/js/skrollr.js"></script>
+	<script src="assets/js/main-slider.js"></script>
+	<script src="assets/js/full-slider.js"></script>
+	<script src="assets/js/half-slider.js"></script>
+	<script src="assets/js/ex-slider.js"></script>
+	<script src="assets/js/hero-started.js"></script>
+	<script src="assets/js/common.js"></script>
 
 </body>
+
 </html>

@@ -4622,6 +4622,7 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 .section.m-gallery-carousel .swiper-slide img {
 	width: auto;
 	height: 623px;
+	 transition: filter 0.5s ease;
 }
 
 
@@ -4888,6 +4889,119 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 	font-size: 20px;
 	color: #FFF;
 	font-weight: 700;
+}
+.about-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  text-align: center;
+   background: rgba(206, 214, 220, 0.4); /* bluish transparent (you can adjust color) */
+  padding: 10px 20px;
+  border: 2px solid grey;
+
+  backdrop-filter: blur(6px);
+  transition: opacity 0.5s ease;
+
+}
+
+/* Subheading hidden by default */
+.about-subheading {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 100%;
+  font-size: 16px;
+  color: #D4AD36;
+  text-align: center;
+  filter: blur(5px);
+  background: rgba(0, 0, 0, 0.671); /* bluish transparent (you can adjust color) */
+  padding: 10px 20px;
+  border: 2px solid grey;
+
+  backdrop-filter: blur(6px);
+    transition: opacity 1s ease;
+}
+
+/* Active state */
+.swiper-slide.active img {
+  filter: blur(2px);
+}
+
+.swiper-slide.active .about-heading {
+  display: none;
+}
+
+.swiper-slide.active .about-subheading {
+  display: block;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  filter: blur(0);
+}
+
+/* Mobile view: reduce text sizes */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 12px; /* half of 24px */
+    padding: 6px 12px; /* also shrink padding a bit */
+  }
+
+  .about-subheading {
+    font-size: 8px; /* half of 16px */
+    padding: 6px 12px;
+  }
+}
+
+.problem-section{
+	width: 100%;
+	text-align: center;
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.problem-heading{
+		font-size: 52px;
+        letter-spacing: 0.025em;
+        line-height: 1;
+}
+
+.problem-subheading{
+	width: 90%;
+}
+
+.problem-inner{
+	max-width: 750px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid grey;
+  margin: 15px auto;
+  width: 95%;
+  max-width: 1000px;   /* adjust width */
+}
+
+@media (max-width: 768px) {
+  .problem-heading {
+    font-size: 32px;  /* reduce heading */
+  }
+
+ 
 }
 
 .team-item:hover .image:before,
