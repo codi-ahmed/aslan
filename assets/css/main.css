@@ -103,21 +103,21 @@ body.no-scroll {
 }
 
 a {
-	color: #eb6165;
+	color: #D4AD36;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 a:link {
-	color: #eb6165;
+	color: #D4AD36;
 }
 
 a:active {
-	color: #eb6165;
+	color: #D4AD36;
 }
 
 a:visited {
-	color: #eb6165;
+	color: #D4AD36;
 }
 
 a:hover {
@@ -228,6 +228,9 @@ h6 {
 p {
 	padding: 0;
 	margin: 30px 0;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
 }
 
 strong {
@@ -677,7 +680,7 @@ blockquote cite br {
 
 .wp-block-calendar a {
 	text-decoration: none;
-	color: #eb6165;
+	color: #D4AD36;
 }
 
 .wp-block-column p:first-child,
@@ -817,8 +820,8 @@ hr {
 	text-align: center;
 	text-decoration: none;
 	overflow-wrap: break-word;
-	background-color: #eb6165;
-	border: 1px solid #eb6165;
+	background-color: #D4AD36;
+	border: 1px solid #D4AD36;
 	border-radius: 28px;
 	color: #fff;
 	cursor: pointer;
@@ -839,8 +842,8 @@ hr {
 
 .is-style-outline .wp-block-button__link {
 	background-color: transparent;
-	color: #eb6165;
-	border: 1px solid #eb6165;
+	color: #D4AD36;
+	border: 1px solid #D4AD36;
 }
 
 .post-content .wp-block-archives {
@@ -1053,7 +1056,7 @@ hr {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
-	background: #eb6165;
+	background: #D4AD36;
 	border-radius: 15px;
 	-webkit-animation: spinner 0.75s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
 	animation: spinner 0.75s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
@@ -1077,7 +1080,7 @@ hr {
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background: #eb6165;
+	background: #D4AD36;
 	border-radius: 0;
 	-webkit-animation: spinnerline 1s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
 	animation: spinnerline 1s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
@@ -1940,7 +1943,7 @@ hr {
 }
 
 .header .logo .logotype__title:first-letter {
-	color: #eb6165;
+	color: #D4AD36;
 }
 
 .header .logo .logotype__sub {
@@ -2060,7 +2063,7 @@ hr {
 	bottom: -10px;
 	width: 0;
 	height: 2px;
-	background: #eb6165;
+	background: #D4AD36;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-moz-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
@@ -2189,7 +2192,7 @@ hr {
 	display: inline-block;
 	font-size: 1.25em;
 	width: 0.55em;
-	color: #eb6165;
+	color: #D4AD36;
 	font-style: normal;
 }
 
@@ -2428,7 +2431,7 @@ hr {
 .section.full-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
 .section.half-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	color: #FFF;
-	background: #eb6165;
+	background: #D4AD36;
 }
 
 .section.half-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -2633,7 +2636,7 @@ hr {
 	bottom: -30px;
 	width: 0;
 	height: 1px;
-	background: #eb6165;
+	background: #D4AD36;
 	transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1) 0.4s;
 	-moz-transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1) 0.4s;
 	-webkit-transition: all 0.6s cubic-bezier(0.3, 0, 0.3, 1) 0.4s;
@@ -2974,8 +2977,9 @@ body .hero-main-slider .swiper-pagination {
 .m-titles {
 	position: relative;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 }
+
 
 .m-titles .m-subtitle {
 	margin-bottom: 10px;
@@ -2989,7 +2993,7 @@ body .hero-main-slider .swiper-pagination {
 }
 
 .m-titles .m-category a {
-	color: #eb6165;
+	color: #D4AD36;
 	font-weight: 700;
 	text-decoration: none;
 }
@@ -2997,10 +3001,10 @@ body .hero-main-slider .swiper-pagination {
 .m-titles .m-title {
 	margin-top: 0;
 	margin-bottom: 30px;
-	font-size: 42px;
+	font-size: 52px;
 	line-height: 1.3;
 	color: #FFF;
-	font-weight: 900;
+	/* font-weight: 900; */
 }
 
 @media screen and (min-width: 1080px) {
@@ -3060,7 +3064,7 @@ body .hero-main-slider .swiper-pagination {
 }
 
 .h-titles .h-subtitle.red {
-	color: #eb6165;
+	color: #D4AD36;
 }
 
 .h-titles .h-text {
@@ -3411,7 +3415,7 @@ body .hero-main-slider .swiper-pagination {
 
 .experience-carousel .slide-titles .label {
 	font-size: 20px;
-	color: #eb6165;
+	color: #D4AD36;
 	font-weight: 700;
 }
 
@@ -3747,7 +3751,7 @@ body .hero-main-slider .swiper-pagination {
 	width: 0;
 	max-width: 60%;
 	height: 2px;
-	background: #eb6165;
+	background: #D4AD36;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-moz-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
@@ -3937,7 +3941,7 @@ body .hero-main-slider .swiper-pagination {
 }
 
 .works-item .desc .category {
-	color: #eb6165;
+	color: #D4AD36;
 	font-weight: 700;
 	display: block;
 }
@@ -4238,7 +4242,7 @@ body .hero-main-slider .swiper-pagination {
 	bottom: 0;
 	width: 0;
 	height: 1px;
-	background: #eb6165;
+	background: #D4AD36;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-moz-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
@@ -4287,7 +4291,7 @@ body .swiper-container-horizontal>.swiper-pagination-progressbar {
 }
 
 body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-	background: #eb6165;
+	background: #D4AD36;
 	opacity: 1;
 }
 
@@ -4345,7 +4349,7 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 }
 
 .c-list ul li strong {
-	color: #eb6165;
+	color: #D4AD36;
 }
 
 .c-list ul li a {
@@ -4735,7 +4739,7 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 
 .archive-item .desc .category {
 	margin-bottom: 10px;
-	color: #eb6165;
+	color: #D4AD36;
 	font-weight: 700;
 }
 
@@ -4789,7 +4793,7 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 	vertical-align: top;
 	font-size: 59px;
 	line-height: 69px;
-	color: #eb6165;
+	color: #D4AD36;
 }
 
 .services-item .name {
@@ -4917,7 +4921,7 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   color: white;
   width: 100%;
   text-align: center;
-   background: rgba(206, 214, 220, 0.4); /* bluish transparent (you can adjust color) */
+   background: black; /* bluish transparent (you can adjust color) */
   padding: 10px 20px;
   border: 2px solid grey;
 
@@ -4935,12 +4939,11 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   transform: translate(-50%, -45%);
   width: 100%;
   font-size: 16px;
-  color: #D4AD36;
+  color: white;
   text-align: center;
   filter: blur(5px);
   background: rgba(0, 0, 0, 0.671); /* bluish transparent (you can adjust color) */
   padding: 10px 20px;
-  border: 2px solid grey;
 
   backdrop-filter: blur(6px);
     transition: opacity 1s ease;
@@ -5278,7 +5281,7 @@ a.page-numbers,
 
 a.page-numbers,
 .post-page-numbers {
-	border: 1px solid #eb6165;
+	border: 1px solid #D4AD36;
 }
 
 a.page-numbers.prev {
@@ -5299,7 +5302,7 @@ a.page-numbers.next .icon-arrow {
 	right: 0;
 	width: 30px;
 	height: 2px;
-	background: #eb6165;
+	background: #D4AD36;
 }
 
 a.page-numbers.prev .icon-arrow:before,
@@ -5312,7 +5315,7 @@ a.page-numbers.next .icon-arrow:after {
 	right: 0;
 	width: 15px;
 	height: 2px;
-	background: #eb6165;
+	background: #D4AD36;
 	-ms-transform: rotate(35deg);
 	transform: rotate(35deg);
 	-webkit-transform: rotate(35deg);
@@ -5335,8 +5338,8 @@ a.page-numbers.current,
 a.post-page-numbers.current,
 .page-numbers.current,
 .post-page-numbers.current {
-	background: #eb6165;
-	border-color: #eb6165;
+	background: #D4AD36;
+	border-color: #D4AD36;
 }
 
 
@@ -5447,7 +5450,7 @@ input.search-submit,
 	bottom: -20px;
 	width: 30px;
 	height: 4px;
-	background: #eb6165;
+	background: #D4AD36;
 	-webkit-transition: opacity 0.3s linear, color 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	transition: opacity 0.3s linear, color 0.3s linear, -webkit-transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-o-transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear, color 0.3s linear;
@@ -5485,7 +5488,7 @@ input.search-submit,
 
 .content-sidebar ul li a:hover,
 .post-content .wp-block-archives li a:hover {
-	color: #eb6165;
+	color: #D4AD36;
 	text-decoration: underline;
 }
 
@@ -5546,7 +5549,7 @@ input.search-submit,
 }
 
 .wp-block-calendar tfoot a {
-	color: #eb6165;
+	color: #D4AD36;
 }
 
 .content-sidebar a {
@@ -5574,7 +5577,7 @@ input.search-submit,
 	top: 12px;
 	width: 5px;
 	height: 1px;
-	background: #eb6165;
+	background: #D4AD36;
 }
 
 .wp-block-rss {
@@ -5590,7 +5593,7 @@ input.search-submit,
 .content-sidebar ul li a.rsswidget,
 .wp-block-rss li a {
 	display: block;
-	color: #eb6165;
+	color: #D4AD36;
 	font-weight: 700;
 	text-decoration: none;
 }
@@ -5636,7 +5639,7 @@ input.search-submit,
 	color: #FFF;
 	text-transform: none;
 	text-decoration: none;
-	border: 1px solid #eb6165;
+	border: 1px solid #D4AD36;
 }
 
 .content-sidebar ul.menu {
@@ -5981,7 +5984,7 @@ form.post-password-form label {
 }
 
 .post-password-form input[type="submit"] {
-	background-color: #eb6165;
+	background-color: #D4AD36;
 	border: 0;
 	border-radius: 5rem;
 	color: #fff;
@@ -6097,7 +6100,7 @@ form.post-password-form label {
 }
 
 .is-style-outline>.wp-block-button__link:not(.has-text-color), .wp-block-button__link.is-style-outline:not(.has-text-color) {
-	color: #eb6165;
+	color: #D4AD36;
 }
 
 a.wp-block-button__link {
@@ -7317,7 +7320,7 @@ body .js-testimonials .swiper-pagination .swiper-pagination-bullet {
 body .js-testimonials .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
 	opacity: 1;
 	width: 24px;
-	background: #eb6165;
+	background: #D4AD36;
 }
 
 .testimonials-item {
