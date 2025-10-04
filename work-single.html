@@ -113,38 +113,40 @@
 			font-size: clamp(1.rem, 5vw, 1.75rem);
 			font-weight: 500;
 		}
+
 		[radial-border]::after {
-      content: "";
-      pointer-events: none;
-      user-select: none;
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      mask-composite: xor;
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      position: absolute;
-      inset: 0;
-      padding: 2px;
-      border-radius: inherit;
-      background: radial-gradient(ellipse 80% 80% at 50% 20%,
-          rgba(195, 193, 195, 0.9),
-          #D4AD36,
-          rgba(165, 160, 69, 0));
-    }
+			content: "";
+			pointer-events: none;
+			user-select: none;
+			-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+			mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+			mask-composite: xor;
+			-webkit-mask-composite: xor;
+			mask-composite: exclude;
+			position: absolute;
+			inset: 0;
+			padding: 2px;
+			border-radius: inherit;
+			background: radial-gradient(ellipse 80% 80% at 50% 20%,
+					rgba(195, 193, 195, 0.9),
+					#D4AD36,
+					rgba(165, 160, 69, 0));
+		}
 
-    [radial-border="right"]::after {
-      background: radial-gradient(ellipse 80% 80% at 95% 20%,
-          rgba(195, 193, 195, 0.9),
-          #D4AD36,
-          rgba(165, 160, 69, 0));
-    }
+		[radial-border="right"]::after {
+			background: radial-gradient(ellipse 80% 80% at 95% 20%,
+					rgba(195, 193, 195, 0.9),
+					#D4AD36,
+					rgba(165, 160, 69, 0));
+		}
 
-    [radial-border="left"]::after {
-      background: radial-gradient(ellipse 80% 80% at 5% 20%,
-          rgba(195, 193, 195, 0.9),
-          #D4AD36,
-          rgba(165, 160, 69, 0));
-    }
+		[radial-border="left"]::after {
+			background: radial-gradient(ellipse 80% 80% at 5% 20%,
+					rgba(195, 193, 195, 0.9),
+					#D4AD36,
+					rgba(165, 160, 69, 0));
+		}
+
 		[glow-border="card"]::before {
 			content: "";
 			pointer-events: none;
@@ -165,9 +167,9 @@
 			transition-delay: 0s;
 			transition-property: opacity;
 			background: radial-gradient(circle 10rem at var(--cursor-x) var(--cursor-y),
-					 rgba(195, 193, 195, 0.9),
-          #D4AD36,
-          rgba(165, 160, 69, 0));
+					rgba(195, 193, 195, 0.9),
+					#D4AD36,
+					rgba(165, 160, 69, 0));
 			background-size: auto;
 			background-origin: padding-box;
 			z-index: 0;
@@ -311,7 +313,8 @@
 								<!-- <div class="h-subtitle red splitting-text-anim-1 scroll-animate" data-splitting="chars"
 									data-animate="active">Photography</div> -->
 								<div class="h-title splitting-text-anim-2 scroll-animate" data-splitting="chars"
-									data-animate="active" style="text-align: center;">We see the signal before the siren</div>
+									data-animate="active" style="text-align: center;">We see the signal before the siren
+								</div>
 							</div>
 
 						</div>
@@ -358,25 +361,28 @@
 		</div> -->
 
 			<!-- Section Description -->
-			<!-- <div class="section section-inner m-description">
+			<div class="section section-inner m-description">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
 							<div class="m-titles">
 								<div class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active">
-									But what if we could?</div>
+									</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="description-text scrolla-element-anim-1 scroll-animate splitting-text-anim-1"
 								data-animate="active">
-								<p>Before the mourning, before the carnage, before the preparation, there’s a signal. We’re here to help you see it.
+								<p style="text-align: center;">The rot of mass violence has embedded itself into our lives. And year after year,
+									that infestation warps more minds, claims more lives, and leaves more destruction in
+									its wake. We’ve been made to live under a perpetual sense of fear and foreboding
+									because the conventional wisdom is that we can neither see nor predict these acts.
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 
 
 			<!-- quantum section import  -->
@@ -402,7 +408,8 @@
 						</div>
 						<div radial-border="right" glow-border="card" class="benefit-card is-left">
 							<div class="benefit-card_inner">
-								<h3 data-animation="text-reveal" class="heading-style-h3-small">Persistent monitoring</h3>
+								<h3 data-animation="text-reveal" class="heading-style-h3-small">Persistent monitoring
+								</h3>
 								<p data-animation="text-reveal">Monitor the drift.</p>
 							</div>
 						</div>
@@ -412,7 +419,7 @@
 								<p data-animation="text-reveal">Surface the signal.</p>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
@@ -534,7 +541,8 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 align-left col-lg-12">
 							<div class="m-titles">
-								<div class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active" style="text-align: center;">
+								<div class="m-title scrolla-element-anim-1 scroll-animate" data-animate="active"
+									style="text-align: center;">
 									Backed by those discontent with the status quo</div>
 							</div>
 						</div>
@@ -547,8 +555,8 @@
 										data-animate="active">
 										<div class="partners-item">
 											<div class="image">
-												<a target="_blank" href=""><img
-														src="assets/images/brand-logo-01.png" alt="#1" /></a>
+												<a target="_blank" href=""><img src="assets/images/brand-logo-01.png"
+														alt="#1" /></a>
 											</div>
 										</div>
 									</div>
@@ -556,8 +564,8 @@
 										data-animate="active">
 										<div class="partners-item">
 											<div class="image">
-												<a target="_blank" href=""><img
-														src="assets/images/brand-logo-02.png" alt="#2" /></a>
+												<a target="_blank" href=""><img src="assets/images/brand-logo-02.png"
+														alt="#2" /></a>
 											</div>
 										</div>
 									</div>
@@ -565,13 +573,13 @@
 										data-animate="active">
 										<div class="partners-item">
 											<div class="image">
-												<a target="_blank" href=""><img
-														src="assets/images/brand-logo-03.png" alt="#3" style=" filter: brightness(0) invert(1);"/></a>
+												<a target="_blank" href=""><img src="assets/images/brand-logo-03.png"
+														alt="#3" style=" filter: brightness(0) invert(1);" /></a>
 											</div>
 										</div>
 									</div>
-									
-									
+
+
 								</div>
 								<div class="divider"></div>
 								<div class="partners-items row" style="display: flex; justify-content: center;">
@@ -579,8 +587,8 @@
 										data-animate="active">
 										<div class="partners-item">
 											<div class="image">
-												<a target="_blank" href=""><img
-														src="assets/images/brand-logo-05.png" alt="#1" /></a>
+												<a target="_blank" href=""><img src="assets/images/brand-logo-05.png"
+														alt="#1" /></a>
 											</div>
 										</div>
 									</div>
@@ -588,15 +596,15 @@
 										data-animate="active">
 										<div class="partners-item">
 											<div class="image">
-												<a target="_blank" href=""><img
-														src="assets/images/brand-logo-04.png" alt="#4" /></a>
+												<a target="_blank" href=""><img src="assets/images/brand-logo-04.png"
+														alt="#4" /></a>
 											</div>
 										</div>
 									</div>
-								
-									
-									
-									
+
+
+
+
 								</div>
 							</div>
 						</div>
@@ -676,75 +684,75 @@
 		<div class="cursor"></div>
 
 	</div>
-	 <script src="https://cdn.prod.website-files.com/gsap/3.13.0/gsap.min.js" type="text/javascript"></script>
-  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/ScrollTrigger.min.js" type="text/javascript"></script>
+	<script src="https://cdn.prod.website-files.com/gsap/3.13.0/gsap.min.js" type="text/javascript"></script>
+	<script src="https://cdn.prod.website-files.com/gsap/3.13.0/ScrollTrigger.min.js" type="text/javascript"></script>
 	<script>
-		 document.addEventListener("DOMContentLoaded", () =>{
+		document.addEventListener("DOMContentLoaded", () => {
 			gsap.registerPlugin(ScrollTrigger);
 
-      // ========== Cursor Glow Border ========== //
-      function cardGlowBorder() {
-        document.querySelectorAll('[glow-border="wrapper"]').forEach(wrapper => {
-          wrapper.addEventListener("mousemove", function (event) {
-            this.querySelectorAll('[glow-border="card"]').forEach(card => {
-              const rect = card.getBoundingClientRect(),
-                x = event.clientX - rect.left,
-                y = event.clientY - rect.top;
-              card.style.setProperty("--cursor-x", `${x}px`);
-              card.style.setProperty("--cursor-y", `${y}px`);
-            });
-          });
-        });
-      }
+			// ========== Cursor Glow Border ========== //
+			function cardGlowBorder() {
+				document.querySelectorAll('[glow-border="wrapper"]').forEach(wrapper => {
+					wrapper.addEventListener("mousemove", function (event) {
+						this.querySelectorAll('[glow-border="card"]').forEach(card => {
+							const rect = card.getBoundingClientRect(),
+								x = event.clientX - rect.left,
+								y = event.clientY - rect.top;
+							card.style.setProperty("--cursor-x", `${x}px`);
+							card.style.setProperty("--cursor-y", `${y}px`);
+						});
+					});
+				});
+			}
 
-      if (document.querySelectorAll('[glow-border="wrapper"]').length) {
-        cardGlowBorder();
-      }
+			if (document.querySelectorAll('[glow-border="wrapper"]').length) {
+				cardGlowBorder();
+			}
 
-	  // ========== Text Reveal on Scroll ========== //
-      document.querySelectorAll('[data-animation="text-reveal"]').forEach(el => {
-        gsap.fromTo(el,
-          { opacity: 0 },
-          {
-            opacity: 1,
-            ease: "none",
-            scrollTrigger: {
-              trigger: el,
-              start: "top 80%",
-              end: "top 40%",
-              scrub: true,
-            }
-          }
-        );
-      });
+			// ========== Text Reveal on Scroll ========== //
+			document.querySelectorAll('[data-animation="text-reveal"]').forEach(el => {
+				gsap.fromTo(el,
+					{ opacity: 0 },
+					{
+						opacity: 1,
+						ease: "none",
+						scrollTrigger: {
+							trigger: el,
+							start: "top 80%",
+							end: "top 40%",
+							scrub: true,
+						}
+					}
+				);
+			});
 
-	  // ========== Benefit Cards Scroll In ========== //
-      if (window.innerWidth >= 991) {
-        document.querySelectorAll('.benefit-card').forEach(card => {
-          const isLeft = card.classList.contains('is-left');
-          const isRight = card.classList.contains('is-right');
+			// ========== Benefit Cards Scroll In ========== //
+			if (window.innerWidth >= 991) {
+				document.querySelectorAll('.benefit-card').forEach(card => {
+					const isLeft = card.classList.contains('is-left');
+					const isRight = card.classList.contains('is-right');
 
-          const from = {
-            x: isLeft ? '-2rem' : isRight ? '2rem' : '0rem',
-            y: '2rem',
-            opacity: 0
-          };
+					const from = {
+						x: isLeft ? '-2rem' : isRight ? '2rem' : '0rem',
+						y: '2rem',
+						opacity: 0
+					};
 
-          gsap.fromTo(card, from, {
-            x: '0rem',
-            y: '0rem',
-            opacity: 1,
-            ease: 'power2.out',
-            scrollTrigger: {
-              trigger: card,
-              start: 'top 80%',
-              end: 'top 20%',
-              scrub: true
-            }
-          });
-        });
-      }
-		 });
+					gsap.fromTo(card, from, {
+						x: '0rem',
+						y: '0rem',
+						opacity: 1,
+						ease: 'power2.out',
+						scrollTrigger: {
+							trigger: card,
+							start: 'top 80%',
+							end: 'top 20%',
+							scrub: true
+						}
+					});
+				});
+			}
+		});
 	</script>
 	<script>
 		document.addEventListener("DOMContentLoaded", () => {
@@ -847,32 +855,32 @@
 				);
 			});
 
-			   // ========== Benefit Cards Scroll In ========== //
-      if (window.innerWidth >= 991) {
-        document.querySelectorAll('.benefit-card').forEach(card => {
-          const isLeft = card.classList.contains('is-left');
-          const isRight = card.classList.contains('is-right');
+			// ========== Benefit Cards Scroll In ========== //
+			if (window.innerWidth >= 991) {
+				document.querySelectorAll('.benefit-card').forEach(card => {
+					const isLeft = card.classList.contains('is-left');
+					const isRight = card.classList.contains('is-right');
 
-          const from = {
-            x: isLeft ? '-2rem' : isRight ? '2rem' : '0rem',
-            y: '2rem',
-            opacity: 0
-          };
+					const from = {
+						x: isLeft ? '-2rem' : isRight ? '2rem' : '0rem',
+						y: '2rem',
+						opacity: 0
+					};
 
-          gsap.fromTo(card, from, {
-            x: '0rem',
-            y: '0rem',
-            opacity: 1,
-            ease: 'power2.out',
-            scrollTrigger: {
-              trigger: card,
-              start: 'top 80%',
-              end: 'top 20%',
-              scrub: true
-            }
-          });
-        });
-      }
+					gsap.fromTo(card, from, {
+						x: '0rem',
+						y: '0rem',
+						opacity: 1,
+						ease: 'power2.out',
+						scrollTrigger: {
+							trigger: card,
+							start: 'top 80%',
+							end: 'top 20%',
+							scrub: true
+						}
+					});
+				});
+			}
 
 		});
 	</script>
