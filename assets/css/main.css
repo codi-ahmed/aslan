@@ -2787,7 +2787,7 @@ hr {
 
 .dark-first .hero-main-slider .swiper-buttons .swiper-button-prev,
 .dark-first .hero-main-slider .swiper-buttons .swiper-button-next {
-	filter: invert(1);
+	/* filter: invert(1); */
 }
 
 body .hero-main-slider .swiper-pagination {
