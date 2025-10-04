@@ -3594,6 +3594,19 @@ body .hero-main-slider .swiper-pagination {
 	line-height: 28px;
 }
 
+/**
+* Gradient text
+**/
+
+.gradient-text {
+  font-weight: bolder;
+  font-size: 28px;
+  background: linear-gradient(to right, #d4ac3691, rgba(128, 128, 128, 0.54));
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  -webkit-text-fill-color: transparent; /* Makes background visible as text color */
+  background-clip: text; /* Standard */
+  color: transparent; /* Fallback */
+}
 
 /**
 * Section Partners
@@ -3602,6 +3615,10 @@ body .hero-main-slider .swiper-pagination {
 .partners-box {
 	margin-top: 20px;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
 }
 
 .partners-box .text {
@@ -4587,7 +4604,7 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 **/
 
 .section.m-gallery-carousel {
-	margin-top: 0!important;
+	margin-top: 0;
 	position: relative;
 	cursor: -webkit-grab;
 	cursor: grab;
