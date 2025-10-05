@@ -54,14 +54,14 @@
 			<div class="header__builder">
 				<div class="header-inner">
 					<!-- logo -->
-				<div class="logo-image" style="width: 20%;">
+				<div class="logo-image l-m-2" >
 					<a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
 				</div>
 				<div class="menu-header">
-					<a href="index.html" class="menu-list">Home +</a>
-					<a href="about.html" class="menu-list">About +</a>
-					<a href="problem.html" class="menu-list">Problem +</a>
-					<a href="contacts.html" class="menu-list">Contact +</a>
+					<a href="index.html" class="menu-list">Home </a>
+					<a href="about.html" class="menu-list">About </a>
+					<a href="problem.html" class="menu-list">Problem </a>
+					<a href="contacts.html" class="menu-list">Contact </a>
 				</div>	
 				<!-- menu btn -->
 				<a href="#" class="menu-btn full"><span></span></a>
@@ -342,6 +342,46 @@
 <script src="assets/js/ex-slider.js"></script>
 <script src="assets/js/hero-started.js"></script>
 <script src="assets/js/common.js"></script>
+
+<script>
+  function handleLogoClass() {
+    const logoDiv = document.querySelector(".logo-image");
+    if (!logoDiv) return;
+
+    if (window.innerWidth <= 768) {
+      logoDiv.classList.remove("l-m-2");
+    } else {
+      // Optional: add it back when screen is larger
+      logoDiv.classList.add("l-m-2");
+    }
+  }
+
+  // Run when page loads
+  handleLogoClass();
+
+  // Run when window resizes
+  window.addEventListener("resize", handleLogoClass);
+</script>
+
+
+<script>
+  let lastScroll = 0;
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll && currentScroll > 50) {
+      // scrolling down
+      header.classList.add("hidden");
+    } else {
+      // scrolling up
+      header.classList.remove("hidden");
+    }
+
+    lastScroll = currentScroll;
+  });
+</script>
 
 </body>
 </html>

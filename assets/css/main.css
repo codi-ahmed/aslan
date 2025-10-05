@@ -1461,7 +1461,7 @@ hr {
 **/
 
 .header {
-	padding: 0px 50px;
+	padding-right: 50px;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -1474,6 +1474,11 @@ hr {
 	-moz-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-o-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+header.hidden {
+	transform: translateY(-100%);
+	opacity: 0;
 }
 
 
@@ -1615,12 +1620,24 @@ font-family: 'Manrope', sans-serif;
 }
 
 .logo-image {
+
 	position: relative;
 	z-index: 3;
+	
+
+
+}
+
+.l-m-2{
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .logo-image img {
 	max-width: 136px;
+
 }
 
 .no-scroll.dark-first .header .header__builder .logo-image img {
@@ -2668,7 +2685,7 @@ font-family: 'Manrope', sans-serif;
 
 .rotating-word::after {
   content: "Grievance";
-  animation: rotateWords 7s infinite;
+  animation: rotateWords 12s infinite;
 }
 
 /* Animate text change */
@@ -2697,7 +2714,7 @@ font-family: 'Manrope', sans-serif;
 /* show first word initially */
 .rotating-subtitle::after {
   content: "Before It Turn Into Planning.";
-  animation: rotateSubtitle 7s infinite;
+  animation: rotateSubtitle 12s infinite;
 }
 
 /* keyframes for switching words */
@@ -6368,7 +6385,7 @@ a.wp-block-button__link {
 	}
 	/*header*/
 	.header {
-		padding: 0 40px;
+	padding-right: 40px;
 		
 	}
 	.menu-header{
@@ -6721,6 +6738,10 @@ a.wp-block-button__link {
 	.menu-header{
 		display: none;
 	}
+	.header{
+		padding-left: 40px;
+	}
+	
 }
 @media screen and (max-width: 768px) {
 	html,
