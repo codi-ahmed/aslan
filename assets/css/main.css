@@ -2667,14 +2667,14 @@ font-family: 'Manrope', sans-serif;
 }
 
 .rotating-word::after {
-  content: "Gravience";
+  content: "Grievance";
   animation: rotateWords 7s infinite;
 }
 
 /* Animate text change */
 @keyframes rotateWords {
   0%, 30% {
-    content: "Gravience";
+    content: "Grievance";
   }
   33%, 63% {
     content: "Warning";
@@ -2683,7 +2683,7 @@ font-family: 'Manrope', sans-serif;
     content: "Tomorrow";
   }
   100% {
-    content: "Gravience";
+    content: "Grievance";
   }
 }
 
