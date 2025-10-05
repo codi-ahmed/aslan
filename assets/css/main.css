@@ -57,6 +57,60 @@ Version: 1.0.0
 	- Responsive
 */
 
+/* === MANROPE FONT FAMILY === */
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/font-awesome/webfonts/Manrope-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/font-awesome/webfonts/Manrope-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/font-awesome/webfonts/Manrope-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/font-awesome/webfonts/Manrope-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/font-awesome/webfonts/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/font-awesome/webfonts/Manrope-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../static/Manrope-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* === DEFAULT STYLE === */
+
+
+
 /**
 * Base Styles
 **/
@@ -90,8 +144,8 @@ body {
 	height: auto !important;
 	background: #18181b;
 	font-size: 18px;
-	color: #c0c0c7;
-	font-family: "Roboto", sans-serif;
+	color: white;
+	font-family: 'Manrope', sans-serif;
 	font-weight: 400;
 	line-height: 1.6;
 	-webkit-font-smoothing: antialiased;
@@ -117,7 +171,7 @@ a:active {
 }
 
 a:visited {
-	color: #D4AD36;
+	color: white;
 }
 
 a:hover {
@@ -135,7 +189,8 @@ img {
 input,
 textarea,
 button {
-	font-family: "Roboto";
+	font-family: 'Manrope', sans-serif;
+
 }
 
 label {
@@ -230,7 +285,8 @@ p {
 	margin: 30px 0;
 	font-size: 18px;
 	font-weight: 400;
-	font-family: "Roboto", sans-serif;
+	font-family: 'Manrope', sans-serif;
+
 }
 
 strong {
@@ -362,7 +418,8 @@ textarea {
 	display: block;
 	width: 100%;
 	height: 56px;
-	font-family: "Roboto";
+	font-family: 'Manrope', sans-serif;
+
 	font-size: 18px;
 	color: #FFF;
 	resize: none;
@@ -396,7 +453,7 @@ label,
 legend {
 	display: block;
 	padding-bottom: 10px;
-	font-family: "Roboto";
+	font-family: 'Manrope', sans-serif;
 	font-size: 18px;
 }
 
@@ -412,7 +469,7 @@ input[type="radio"] {
 
 label.error {
 	padding-top: 5px;
-	font-family: "Roboto";
+	font-family: 'Manrope', sans-serif;
 	font-size: 14px;
 	color: red;
 	display: none;
@@ -491,7 +548,7 @@ blockquote,
 	margin: 50px 0;
 	padding: 0 50px;
 	padding-top: 35px;
-	font-family: "Roboto";
+	font-family: 'Manrope', sans-serif;
 	font-size: 20px;
 	line-height: 1.3;
 	color: #FFF;
@@ -565,7 +622,7 @@ blockquote cite,
 .wp-block-quote.is-large cite,
 .wp-block-quote.is-style-large cite,
 .wp-block-pullquote cite {
-	font-family: "Playfair Display";
+	font-family: 'Manrope', sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	display: block;
@@ -1404,18 +1461,51 @@ hr {
 **/
 
 .header {
-	padding: 0 50px;
+	padding: 0px 50px;
 	position: fixed;
 	left: 0;
-	top: 40px;
+	top: 0;
 	width: 100%;
+	height: 100px;
+
 	z-index: 90;
+	border: 1px solid white;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-moz-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-o-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 }
 
+
+.header-inner{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 80px;
+	border-right: 1px solid white;
+	height: 100%;
+}
+
+.menu-header{
+	width: 80%;
+	height: 100%;
+	padding-left: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 7rem;
+	border-left: 1px solid white;
+}
+
+.menu-list{
+	text-decoration: none;
+	font-size: 24px;
+font-family: 'Manrope', sans-serif;
+	color: white;
+	font-weight: lighter;
+}
 .header.opened {
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
@@ -1516,10 +1606,9 @@ hr {
 }
 
 .menu-btn {
-	margin-top: -20px;
 	position: absolute;
-	top: 50%;
 	right: 0;
+	
 	width: 32px;
 	height: 40px;
 	z-index: 3;
@@ -1531,7 +1620,7 @@ hr {
 }
 
 .logo-image img {
-	max-width: 96px;
+	max-width: 136px;
 }
 
 .no-scroll.dark-first .header .header__builder .logo-image img {
@@ -1544,6 +1633,7 @@ hr {
 
 .header__builder {
 	position: relative;
+	height: 100%;
 }
 
 .dark-first .header .header__builder .logo-image img {
@@ -1693,7 +1783,7 @@ hr {
 	vertical-align: top;
 	font-size: 49px;
 	line-height: 1;
-	font-family: "Playfair Display";
+	font-family: 'Manrope', sans-serif;
 	color: #c0c0c7;
 	font-weight: 700;
 	text-decoration: none;
@@ -1812,7 +1902,7 @@ hr {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	font-family: "Roboto";
+	font-family: 'Manrope', sans-serif;
 	font-size: 22px;
 	line-height: 1;
 	font-weight: 700;
@@ -1980,7 +2070,7 @@ hr {
 	text-rendering: auto;
 	font-size: 0.875rem;
 	line-height: 1;
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Manrope', sans-serif;
 	font-weight: 900;
 	transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
 	-webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
@@ -2172,7 +2262,7 @@ hr {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	font-family: "Playfair Display";
+	font-family: 'Manrope', sans-serif;
 	font-size: 152px;
 	line-height: 1;
 	font-weight: 400;
@@ -2561,10 +2651,75 @@ hr {
 }
 
 
+
+
+
+/**
+* anemated word
+**/
+
+    .rotating-word {
+  display: inline-block;
+  position: relative;
+  /* color: #f6d743; */
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.rotating-word::after {
+  content: "Gravience";
+  animation: rotateWords 7s infinite;
+}
+
+/* Animate text change */
+@keyframes rotateWords {
+  0%, 30% {
+    content: "Gravience";
+  }
+  33%, 63% {
+    content: "Warning";
+  }
+  66%, 96% {
+    content: "Tomorrow";
+  }
+  100% {
+    content: "Gravience";
+  }
+}
+
+.rotating-subtitle {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* show first word initially */
+.rotating-subtitle::after {
+  content: "Before It Turn Into Planning.";
+  animation: rotateSubtitle 7s infinite;
+}
+
+/* keyframes for switching words */
+@keyframes rotateSubtitle {
+  0%, 30% {
+    content: "Before It Turn Into Planning.";
+  }
+  33%, 63% {
+    content: "Sign Before They Turn Into Headlines.";
+  }
+  66%, 96% {
+    content: "So You Can Prepare Today.";
+  }
+  100% {
+    content: "Before It Turn Into Planning.";
+  }
+}
+
+
 /**
 * Section Hero Main Slider
 **/
-
 .hero-main-slider .slide-titles {
 	padding: 50px;
 	width: 100%;
@@ -2621,7 +2776,7 @@ hr {
 .hero-main-slider .slide-titles .title {
 	position: relative;
 	display: block;
-	font-family: "Playfair Display";
+	font-family: 'Manrope', sans-serif;
 	font-size: 108px;
 	line-height: 1;
 	font-weight: 500;
@@ -2879,7 +3034,7 @@ body .hero-main-slider .swiper-pagination {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	font-family: "Playfair Display";
+	font-family: 'Manrope', sans-serif;
 	font-size: 112px;
 	line-height: 0.9;
 	font-weight: 400;
@@ -3046,7 +3201,7 @@ body .hero-main-slider .swiper-pagination {
 	position: relative;
 	margin-top: 0px;
 	margin-bottom: 40px;
-	font-family: "Playfair Display";
+	font-family: 'Manrope', sans-serif;
 	font-size: 99px;
 	line-height: 1;
 	color: #FFF;
@@ -3201,7 +3356,7 @@ body .hero-main-slider .swiper-pagination {
 }
 
 .section.hero-started .title {
-	font-family: "Playfair Display";
+	font-family: 'Manrope', sans-serif;
 	font-size: 132px;
 	line-height: 1;
 	color: #FFF!important;
@@ -3242,7 +3397,7 @@ body .hero-main-slider .swiper-pagination {
 	left: 0;
 	bottom: -35px;
 	width: 100%;
-	font-family: 'Mr De Haviland';
+	font-family: 'Manrope', sans-serif;
 	font-size: 80px;
 	line-height: 1;
 	color: #FFF;
@@ -3342,14 +3497,14 @@ body .hero-main-slider .swiper-pagination {
 .quote-box .name {
 	font-size: 152px;
 	line-height: 1;
-	font-family: "Playfair Display";
+	font-family: 'Manrope', sans-serif;
 	color: #FFF;
 	font-weight: 400;
 }
 
 .quote-box .label {
 	font-size: 15px;
-	font-family: "Playfair Display";
+	font-family: 'Manrope', sans-serif;
 	color: #FFF;
 	font-weight: 400;
 }
@@ -3421,7 +3576,7 @@ body .hero-main-slider .swiper-pagination {
 
 .experience-carousel .slide-titles .title {
 	margin-bottom: 10px;
-	font-family: "Playfair Display";
+	font-family: 'Manrope', sans-serif;
 	font-size: 112px;
 	line-height: 1;
 	font-weight: 400;
@@ -5056,7 +5211,7 @@ body .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   transition: opacity 0.6s ease, filter 0.6s ease, visibility 0.6s ease;
   z-index: 3;
   line-height: 1.6;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   width: 80%;
     filter: blur(6px);
@@ -5821,7 +5976,7 @@ small {
 	font-variant: normal;
 	text-rendering: auto;
 	line-height: 1;
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Manrope', sans-serif;
 	font-weight: 900;
 }
 
@@ -5866,7 +6021,7 @@ small {
 	font-variant: normal;
 	text-rendering: auto;
 	line-height: 1;
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Manrope', sans-serif;
 	font-weight: 900;
 }
 
@@ -6178,6 +6333,14 @@ a.wp-block-button__link {
 * Responsive
 **/
 
+@media screen and (max-width: 1200px){
+	.menu-header{
+		gap: 3rem;
+	}
+}
+
+
+
 @media screen and (max-width: 1100px) {
 	/*base*/
 	.fw {
@@ -6206,7 +6369,10 @@ a.wp-block-button__link {
 	/*header*/
 	.header {
 		padding: 0 40px;
-		top: 30px;
+		
+	}
+	.menu-header{
+		gap: 3rem;
 	}
 	.section.m-works .container, .section.started-heading .container {
 		padding-left: 40px;
@@ -6551,7 +6717,11 @@ a.wp-block-button__link {
 		margin: 70px 0 0 0;
 	}
 }
-
+@media screen and (max-width: 900px){
+	.menu-header{
+		display: none;
+	}
+}
 @media screen and (max-width: 768px) {
 	html,
 	body {
@@ -6620,6 +6790,11 @@ a.wp-block-button__link {
 	/*header*/
 	.header {
 		top: 25px;
+		border: none;
+	}
+
+	.header-inner{
+		border-right: none;
 	}
 	.header.sticky {
 		padding-top: 20px;
