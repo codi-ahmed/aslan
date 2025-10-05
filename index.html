@@ -179,7 +179,7 @@
 											</div>
 										</div>
 
-										<div class="more-bts">
+										<div class="more-bts" >
 											<a href="work-single.html" data-splitting
 												class="btn more-btn scrolla-element-anim-1">see details</a>
 										</div>
@@ -244,22 +244,21 @@
         s.params.autoplay = false;
       }
     } catch (e) {}
-    // Override movement methods so external JS can't programmatically move slides
+
+    // Disable all motion methods
     ['slideTo','slideNext','slidePrev','slideToLoop','slideToClickedSlide','update'].forEach(fn => {
       try { s[fn] = function () { return this; }; } catch (e) {}
     });
-    try { if (s.off) { s.off(); } } catch (e) {}
-    try { if (s.disable) s.disable(); } catch (e) {}
 
-    // Make container non-interactive to block clicks/touches on DOM
-    try {
-      if (el && el.style) {
-        el.style.pointerEvents = 'none';
-        el.querySelectorAll('a,button').forEach(n => n.setAttribute('tabindex', '-1'));
-      }
-    } catch (e) {}
+    // Don't block links or buttons
+    if (el && el.style) {
+      el.style.pointerEvents = 'auto'; // allow clicks
+      // Instead, just prevent swipe gestures
+      el.addEventListener('touchstart', e => e.stopPropagation(), {passive:true});
+      el.addEventListener('mousedown', e => e.stopPropagation());
+    }
 
-    // Disable visible nav/pagination buttons site-wide (safeguard)
+    // Disable visible nav/pagination buttons site-wide (optional)
     try {
       document.querySelectorAll('.swiper-button-next, .swiper-button-prev, .swiper-pagination, .swiper-scrollbar')
         .forEach(btn => { btn.style.pointerEvents = 'none'; });
@@ -268,21 +267,19 @@
 
   function sweepAndDisable() {
     try {
-      // 1) If Swiper exposes instances array (modern builds)
       if (window.Swiper && Array.isArray(window.Swiper.instances)) {
         window.Swiper.instances.forEach(inst => disableSwiperInstance(inst, inst && inst.el));
       }
     } catch (e) {}
 
-    // 2) Common global variable names (try to catch named instances)
     ['hero_1_slider','swiper','mySwiper','mainSwiper','slider','mainSlider'].forEach(name => {
       try {
         const s = window[name];
-        if (s && (s.el || s.wrapperEl || s.params)) disableSwiperInstance(s, s.el || document.querySelector('.swiper-container'));
+        if (s && (s.el || s.wrapperEl || s.params))
+          disableSwiperInstance(s, s.el || document.querySelector('.swiper-container'));
       } catch (e) {}
     });
 
-    // 3) Look up DOM elements and attached instance properties (el.swiper, el.__swiper, etc.)
     document.querySelectorAll('.swiper-container, .swiper').forEach(el => {
       try {
         let inst = el.swiper || el.__swiper || el._swiper || el.__swiper__ || el.swiperInstance;
@@ -290,27 +287,22 @@
           try { inst = window.Swiper.getInstance(el); } catch(e){}
         }
         if (inst) disableSwiperInstance(inst, el);
-        else {
-          // fallback: make container non-interactive so user can't trigger slides
-          el.style.pointerEvents = 'none';
-        }
       } catch (e) {}
     });
   }
 
-  // Run after load and repeat a few times to catch re-inits
   window.addEventListener('load', function () {
     let tries = 0;
     const iv = setInterval(function () {
       tries++;
       try { sweepAndDisable(); } catch (e) {}
-      if (tries >= 12) clearInterval(iv); // ~12 * 250ms = 3s total catching window
+      if (tries >= 12) clearInterval(iv);
     }, 250);
-    // also do an immediate attempt
     sweepAndDisable();
   });
 })();
 </script>
+
 
 
 
